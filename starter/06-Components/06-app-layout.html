@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        color: black;
+        font-size: 24px;
+
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+
+        height: 100vh;
+        text-align: center;
+      }
+      nav,
+      section,
+      aside {
+        padding-top: 24px;
+      }
+      nav {
+        background-color: burlywood;
+        grid-row: 1 / -1;
+      }
+      menu {
+        background-color: rgb(0, 42, 255);
+        color: rgb(200, 230, 232);
+        grid-column: 2 / -1;
+        display: flex;
+        align-items: center;
+        padding: 0 40px;
+      }
+      aside {
+        background-color: rgb(211, 211, 211);
+      }
+      section {
+        background-color: rgb(211, 211, 211);
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+      button {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: blueviolet;
+        border: none;
+        cursor: pointer;
+        color: white;
+        padding: 8px 12px;
+      }
+      button:last-child {
+        background-color: brown;
+        margin-left: auto;
+      }
+      .email {
+        background-color: blanchedalmond;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>nav</nav>
+    <menu><button>new</button><button>trash</button></menu>
+    <section>
+      <div class="email">email</div>
+      <div class="email">email</div>
+      <div class="email">email</div>
+      <div class="email">email</div>
+    </section>
+    <main>email</main>
+    <aside>additional info</aside>
+  </body>
+</html>
